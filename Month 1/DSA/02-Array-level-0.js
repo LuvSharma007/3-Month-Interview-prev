@@ -153,23 +153,52 @@
 
 // 8.) remove duplicates from array
 
-let arr = [1,2,2,3,6,3,6,8,9,5,3,8];
-let set = new Set(arr);
-console.log(set);  // 1,2,3,6,8,9,5
-let lengthOfArr = 0;
+// let arr = [1,1,2,2,3,3,6,6,8,8,9,9];
 
-function removeDuplicates(){
-    for(let i=0; i<arr.length; i++){
-        if(!set.has(arr[i])){
-            set.add(arr[i]); 
-            arr[lengthOfArr++] = arr[i];
-        }
-    }
+// function removeDuplicatesSorted(arr) {
 
-    return lengthOfArr;
-}
+//     let i = 0;
+//     for (let j = 1; j < arr.length; j++) {
+//         if (arr[j] !== arr[i]) {
+//             i++;              
+//             arr[i] = arr[j];
+//         }
+//     }
+//     return i+1;
+// }
 
-console.log((removeDuplicates()));
+// console.log(removeDuplicatesSorted(arr));
+
+
+// 9.) remove elements 
+// Given an integer array arr and an integer val, remove all occurrences of val in arr in-place. The order of the elements may be changed. Then return the number of elements in arr which are not equal to val.
+
+// let arr = [2,4,7,47,85,88,78,2,47,27,8,9,47];
+// let val = 47;
+
+// function removeElements(arr){
+//     let i=0;
+//     for(let j=0; j<arr.length; j++){
+//         if(arr[j]!==val){
+//             arr[i] = arr[j];
+//             i++;
+//         }
+//     }
+//     return i;
+// }
+
+// console.log(removeElements(arr));
+
+
+// 10.) 
+
+
+
+
+
+
+
+
 
 
 
