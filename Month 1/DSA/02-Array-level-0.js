@@ -190,7 +190,25 @@
 // console.log(removeElements(arr));
 
 
-// 10.) 
+// 10.) reverse string
+
+// let arr = ["h","e","l","l","o"];
+
+// function reverseString(arr){
+//     let start = 0;
+//     let end = arr.length-1;
+//     while(start<end){
+//         let temp = arr[start];
+//         arr[start] = arr[end];
+//         arr[end] = temp
+//         start++;
+//         end--;
+//     }
+    
+//     return arr;
+// }
+
+// console.log(reverseString(arr));
 
 
 
