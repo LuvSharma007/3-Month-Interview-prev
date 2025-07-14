@@ -262,6 +262,27 @@
 
 // console.log(MergeSortedArray());
 
+// 13.) move all zeros 
+
+// let arr = [2,0,4,7,0,47,0,85,0,88,0,78,0,2,0,47,0,0,27,8,0,9,0,0,47];
+
+// const moveAllZeros = (arr)=>{
+//     let nonZeroElm = 0;
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i]!==0){
+//             [arr[i],arr[nonZeroElm]] = [arr[nonZeroElm],arr[i]]
+//             nonZeroElm++;
+//         }
+//     }
+//     return arr;
+// }
+
+// console.log(moveAllZeros(arr));
+
+
+// 14.) 
+
+
 
 
 
