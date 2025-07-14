@@ -280,8 +280,27 @@
 // console.log(moveAllZeros(arr));
 
 
-// 14.) 
+// 14.) max consecutive ones
 
+// let arr = [3,4,1,1,45,1,1,1,1,1,1,11,78,95,1,1,1,1,5,3];
+
+// const maxOnes=()=>{
+//     let count = 0;
+//     let maxCount = 0;
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i]===1){
+//             count++;
+//             if(count > maxCount){
+//                 maxCount = count
+//             };
+//         }
+//         else{
+//             count = 0;
+//         }
+//     }
+//     return maxCount;
+// }
+// console.log(maxOnes());
 
 
 
