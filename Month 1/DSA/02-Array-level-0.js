@@ -302,6 +302,69 @@
 // }
 // console.log(maxOnes());
 
+// 15.) find the missing no. in a sequence from 1 to N.
+
+// let arr = [8, 2, 4, 5, 3, 7, 1];
+
+// const missingNumber = ()=>{
+//     let n = arr.length;
+
+//     let sum = 0;
+//     for(let num of arr){
+//         sum += num;
+//     }
+    
+//     let expectedSum = (n*(n+1))/2;
+//     return expectedSum-sum;
+// }
+
+// console.log(missingNumber());
+
+
+// 2 .) hash approach (but takes extra space)
+
+// let arr = [8, 2, 4, 5, 3, 7, 1];
+
+// const missingNumber = ()=>{
+//     let n = arr.length+1;
+//     let hash = new Array(n+1).fill(0);
+
+//     for(let i=0; i<n-1; i++){
+//         hash[arr[i]]++;
+//     }
+
+//     for(let i=1; i<n-1; i++){
+//         if(hash[i]===0){
+//             return i;
+//         }
+//     }
+
+// }
+
+// console.log(missingNumber());
+
+// 16.) Single number
+
+// let arr = [2,3,3,5,6,5,6];
+
+// const singleNumber = ()=>{
+//     let res=0;
+//     for(let i=0; i<arr.length; i++){
+//         res = res^arr[i];
+//     }
+//     return res;
+// }
+
+// console.log(singleNumber());
+
+
+
+
+
+
+
+
+
 
 
 
