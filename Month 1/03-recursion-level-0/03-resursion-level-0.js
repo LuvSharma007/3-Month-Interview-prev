@@ -1,0 +1,44 @@
+// recursion level-0
+// let n=0;
+// let printNumber = (n)=>{
+//     if(n>3){
+//         return;
+//     }
+//     console.log("Winding:",n);    
+//     printNumber(n+1);
+//     console.log("Run this after base case",n);
+// }
+
+// printNumber(n);
+
+// sum of array 
+
+// iterative way
+
+// let sum =0;
+// let arr = [10,20,30,40,50];
+
+// const sumOfArr = (arr,sum)=>{
+//     for(let i=0; i<arr.length; i++){
+//         sum = sum + arr[i];
+//     }
+//     return sum;
+// }
+// console.log(sumOfArr(arr,sum));
+
+// recursive way
+
+// let arr = [10,20,30,40,50];
+// let sum = 0;
+// let i=0;
+// let sumOfArray = (sum ,i, arr)=>{
+//     if(i>=arr.length){
+//         console.log(sum);
+//         return;
+//     }
+//     sumOfArray(sum+arr[i] , i+1, arr);
+// }
+
+// sumOfArray(sum , i , arr);
+
+
