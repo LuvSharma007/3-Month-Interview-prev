@@ -1,4 +1,7 @@
 // recursion level-0
+
+// 1.)  print numbers
+
 // let n=0;
 // let printNumber = (n)=>{
 //     if(n>3){
@@ -11,7 +14,7 @@
 
 // printNumber(n);
 
-// sum of array 
+// 2.)  sum of array 
 
 // iterative way
 
@@ -40,5 +43,16 @@
 // }
 
 // sumOfArray(sum , i , arr);
+
+
+// 3.) sum of first n natural number
+// let n
+// const firstNaturalNumber = (n)=>{
+
+//     if(n==0) return 0;
+//     return n+firstNaturalNumber(n-1);
+// }
+
+// console.log(firstNaturalNumber(5));
 
 
