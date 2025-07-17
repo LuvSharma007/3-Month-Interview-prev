@@ -71,5 +71,23 @@
 
 // console.log(factorial(4));
 
+// 5.) reverse String
+
+const str = "hello";
+
+const stringReverse = (str) =>{
+    if(str == ""){
+        return "";
+    }
+    return stringReverse(str.slice(1))+str[0];
+}
+
+console.log(stringReverse(str));
+
+
+
+
+
+
 
 
