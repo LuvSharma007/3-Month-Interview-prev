@@ -73,16 +73,50 @@
 
 // 5.) reverse String
 
-const str = "hello";
+// const str = "hello";
 
-const stringReverse = (str) =>{
-    if(str == ""){
-        return "";
-    }
-    return stringReverse(str.slice(1))+str[0];
-}
+// const stringReverse = (str) =>{
+//     if(str == ""){
+//         return "";
+//     }
+//     return stringReverse(str.slice(1))+str[0];
+// }
 
-console.log(stringReverse(str));
+// console.log(stringReverse(str));
+
+// 6.) power of 2
+
+// iterative way
+
+// let n;
+// let powerOf2= (n)=>{
+//     if(n<=0) return false;
+
+//     while(n%2===0){
+//         n=n/2;
+//     }
+//     return n===1;
+    
+// }
+
+// console.log(powerOf2(3));
+
+
+// recursive way
+
+// let n;
+// let powerOf2 = (n)=>{
+//     if(n<=0) return false;
+//     if(n===1) return true;
+//     if(n%2!==0) return false;
+
+//     return powerOf2(n/2);
+    
+
+// }
+// console.log(powerOf2(10));
+
+
 
 
 
