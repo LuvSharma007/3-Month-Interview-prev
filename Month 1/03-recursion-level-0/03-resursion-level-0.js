@@ -55,4 +55,21 @@
 
 // console.log(firstNaturalNumber(5));
 
+// 4.) factorial of n
+
+// let n;
+
+// const factorial = (n)=>{
+//     if(n==0){
+//         return n;
+//     }
+//     if(n==1){
+//         return n;
+//     }
+//     return n*factorial(n-1);
+// }
+
+// console.log(factorial(4));
+
+
 
