@@ -116,6 +116,46 @@
 // }
 // console.log(powerOf2(10));
 
+// 7.) count good numbers
+
+// iterative approach
+
+// n=3;
+// total = 1;
+// const countGoodNumber = (n)=>{
+//     for(let i=0; i<n; i++){
+//         if(i%2==0){
+//             total *= 5
+//         }else{
+//             total *= 4;
+//         }
+//     }
+//     return total;
+// }
+
+// console.log(countGoodNumber(3));
+
+
+// recursive approach
+
+// n=5;
+// total = 1;
+// i = 0;
+// let MOD = 1e9 +7;
+// const countGoodNumber = (n,i,total)=>{
+//     if(i>=n){
+//         return total;
+//     }    
+//     let multiplier = (i%2==0 ? 5:4);
+//     return countGoodNumber(n,i+1,(total*multiplier)%MOD);
+// }
+
+// console.log(countGoodNumber(n,i,total));
+
+
+
+
+
 
 
 
