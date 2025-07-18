@@ -153,6 +153,21 @@
 // console.log(countGoodNumber(n,i,total));
 
 
+// Fibonacci Series
+
+let n = 4;
+
+let fibonacciSeries =(n)=>{
+    if(n<=1){
+        return n;
+    }
+    return fibonacciSeries(n-1) + fibonacciSeries(n-2);
+}
+
+console.log(fibonacciSeries(9));
+
+
+
 
 
 
