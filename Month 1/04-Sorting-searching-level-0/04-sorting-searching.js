@@ -40,4 +40,24 @@
 
 // console.log(binarySearch());
 
+// bubble sort 
+
+// let arr = [12,34,53,234,562,5656,4563,67,245,556,3345,7,45,1,34,665];
+
+// const bubbleSort = ()=>{
+//     for(let i=0; i<arr.length-1; i++){
+//         for(let j=0; j<arr.length-1-i; j++){
+//             if(arr[j]>arr[j+1]){
+//                 let temp = arr[j];
+//                 arr[j] = arr[j+1];
+//                 arr[j+1] = temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// console.log(bubbleSort());
+
+
 
