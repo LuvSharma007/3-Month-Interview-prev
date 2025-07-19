@@ -80,6 +80,24 @@
 
 // console.log(selectionSort());
 
+// insertion sort 
+
+// let arr = [12,34,53,234,562,5656,4563,67,245,556,3345,7,45,1,34,665];
+
+// const insertionSort = () =>{
+//     for(let i=0; i<arr.length; i++){
+//         let sorted = arr[i];
+//         let j=i-1;
+//         while(j>=0 && arr[j]>sorted){
+//             arr[j+1] = arr[j];
+//             j=j-1;
+//         }
+//         arr[j+1] = sorted
+//     }
+//     return arr;
+// }
+
+// console.log(insertionSort());
 
 
 
