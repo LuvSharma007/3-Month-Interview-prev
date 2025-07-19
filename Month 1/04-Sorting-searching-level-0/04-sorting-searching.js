@@ -14,5 +14,30 @@
 
 // console.log(linearchSearch());
 
+// binary search
+
+// let arr = [1,4,6,9,12,15,19,23,26,29,30,34,41,57,59,67,68,70,74,81,85,90,100];
+// let n = 4;
+// let start = 0;
+// let end = arr.length-1;
+
+// const binarySearch = ()=>{    
+//     while(start<=end){
+//         let mid =  Math.floor(start+(end-start)/2)
+//         // console.log(mid);
+        
+//         if(arr[mid]===n){
+//             return mid;
+//         }
+//         if(arr[mid]>n){
+//             end = mid-1;
+//         }else{
+//             start = mid+1 ;
+//         }
+//     }
+//     return -1;
+// }
+
+// console.log(binarySearch());
 
 
