@@ -99,5 +99,70 @@
 
 // console.log(insertionSort());
 
+// Merge sort
+
+let arr = [12,34,53,234,562,5656,4563,67,245,556,3345,7,45,1,34,665];
+let left =0 , right = arr.length-1;
+const merge = (arr,left,mid,right)=>{
+    // find number of elements to be fit in left and right
+    let n1 = mid-left+1;
+    let n2 = right-mid;
+
+    // creating left and right arr
+    let l = new Array(n1);
+    let r = new Array(n2);
+
+    // filling values in left and right
+    for(let i=0; i<n1; i++){
+        l[i] = arr[left+i];
+    }
+    for(let j=0; j<n2; j++){
+        r[j] = arr[mid+1+j];
+    }
+
+    let i=0, j=0, k = left
+    while(i<n1 && j<n2){
+        if(l[i]<=r[j]){
+            arr[k] = l[i];
+            i++;
+        }else{
+            arr[k] = r[j]
+            j++
+        }
+        k++;
+    }
+
+    // copying remaining elements from left and right
+
+    while(i<n1){
+        arr[k] = l[i];
+        i++,k++
+    }
+
+    while(j<n2){
+        arr[k] = r[j];
+        j++,k++
+    }
+
+}
+
+const MergeSort = (arr,left,right)=>{
+    if(left>=right){
+        return;
+    }
+    const mid = Math.floor((left+right)/2);
+    MergeSort(arr,left,mid);
+    MergeSort(arr,mid+1,right);
+    merge(arr,left,mid,right);
+
+}
+
+MergeSort(arr,left,right);
+console.log(arr);
+
+
+
+
+
 
 
