@@ -38,6 +38,28 @@ class LinkedList{
             current = current.next;
         }        
     }
+
+    delete(position){
+        let current = this.head;
+        let prev = null;
+        if(this.head === null){
+            console.log("Linked list is empty");
+            return;
+        }
+        if(position === 1){
+            this.head = this.head.next;
+            return this.head;
+        }
+        for(let i=1; current !== null && i<position; i++){
+            prev = current;
+            current = current.next; 
+        }
+
+        if(current === null){
+            console.log('Position out of bounds');
+        }
+        prev.next = current.next;
+    }
 }
 
 const LL = new LinkedList()
@@ -45,7 +67,14 @@ LL.insert(5);
 LL.insert(6);
 LL.insert(7);
 
-LL.printList()
+LL.printList();
+console.log("----------------------------After deletion");
+
+LL.delete(2);
+LL.printList();
+
+
+
 
 
 
