@@ -100,6 +100,22 @@ class LinkedList{
         return this.head = prev;
     }
 
+    hasCycle(){
+        let slow_ptr = this.head
+        let fast_ptr = this.head;
+        while(fast_ptr !== null && fast_ptr.next !== null){
+            slow_ptr = slow_ptr.next;
+            fast_ptr = fast_ptr.next.next;
+
+            if(slow_ptr === fast_ptr){
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+
 
 }
 
@@ -121,8 +137,13 @@ LL.insert(8);
 
 // console.log(LL.middleElm());
 
-console.log(LL.reverse());
-LL.printList();
+// console.log(LL.reverse());
+// LL.printList();
+
+console.log(LL.hasCycle());
+
+
+
 
 
 
