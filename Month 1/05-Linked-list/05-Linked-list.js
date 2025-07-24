@@ -83,6 +83,24 @@ class LinkedList{
         }
         return slow_ptr.value;
     }
+
+    // we are here only reverse the pointer , now the head becomes tail and vice-versa
+
+    reverse(){
+        let prev = null;
+        let current = this.head;
+        let next = null;
+
+        while(current !== null){
+            next = current.next
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        return this.head = prev;
+    }
+
+
 }
 
 const LL = new LinkedList()
@@ -101,7 +119,11 @@ LL.insert(8);
 // LL.delete(2);
 // LL.printList();
 
-console.log(LL.middleElm());
+// console.log(LL.middleElm());
+
+console.log(LL.reverse());
+LL.printList();
+
 
 
 
