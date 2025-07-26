@@ -111,23 +111,40 @@ class LinkedList{
                 return true;
             }
 
-        }
+        }   
         return false;
     }
 
+    isPalindrome(){
+        let stack = [];
+        let current = this.head;
 
+        // pushing all elements of linked list into stack
+        while(current!==null){
+            stack.push(current.value)
+            current = current.next;
+        }
+        while(this.head!==null){
+            let c = stack.pop();
+
+            if(c!== this.head.value){
+                return false;
+            }
+
+            this.head = this.head.next
+        }
+
+        return true;
+    }
 
 }
 
 const LL = new LinkedList()
 LL.insert(1);
 LL.insert(2);
-LL.insert(3);
-LL.insert(4);
-LL.insert(5);
-LL.insert(6);
-LL.insert(7);
-LL.insert(8);
+LL.insert(1);
+LL.insert(2);
+LL.insert(1);
 
 // LL.printList();
 // console.log("After deletion");
@@ -140,7 +157,10 @@ LL.insert(8);
 // console.log(LL.reverse());
 // LL.printList();
 
-console.log(LL.hasCycle());
+// console.log(LL.hasCycle());
+
+// console.log(LL.isPalindrome());
+
 
 
 
