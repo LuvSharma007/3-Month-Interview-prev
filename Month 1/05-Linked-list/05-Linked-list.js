@@ -137,6 +137,25 @@ class LinkedList{
         return true;
     }
 
+    // intersectPoint(head1, head2) {
+    //     let ptr1 = head1;
+    //     let ptr2 = head2;
+        
+    //     if(!ptr1 || !ptr2 ) return null;
+        
+    //     while(ptr1 !== ptr2){
+    //         ptr1 = ptr1 ? ptr1.next : head2;
+    //         ptr2 = ptr2 ? ptr2.next : head1;
+    //     }
+        
+    //     return ptr1;
+        
+    // }
+
+
+    
+
+
 }
 
 const LL = new LinkedList()

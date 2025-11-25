@@ -64,31 +64,29 @@
 
 // 4.) Binary Search
 
-// let arr = [2,4,5,7,9,14,23,47,52,63,78,81,95,98,102]
-// let start = 0;
-// let end = arr.length-1;
-// let target = 98
-
-// function BinarySearch(arr,target){
-//     while(start<end){
+// let arr = [1,3,5,7,9,10,13,15,45,78,90,100,104,143];
+// let n;
+// const binarySearch = (arr,n)=>{
+// let start=0;
+// let end=arr.length-1;
+//     while (start<=end) {
 //         let mid = Math.floor(start+(end-start)/2);
-//         if(arr[mid]===target){
+//         if(arr[mid]===n){
 //             return mid;
 //         }
-//         if(arr[mid]>target){
-//             end = mid;
-//             end--;
-//         }else{
-//             start = mid;
-//             start++;
+//         if(arr[mid]>n){
+//             end=mid-1;
 //         }
-//     }
+//         if(arr[mid]<n){
+//             start=mid+1;
+//         }
+//     } 
 //     return -1;
 // }
 
-// console.log(BinarySearch(arr,target));
+// console.log(binarySearch(arr,100));
 
-// 5.) Binary sorting
+// 5.) Bubble sorting
 
 // let arr = [670,20,30,40,506,70,80,34,6,8,334,68,5788,3467,836];
 // let n=arr.length-1;
@@ -132,23 +130,22 @@
 
 // 7) .Insertion sort
 
-// let arr = [670,2,30,40,506,70,80,34,6,8,334,68,5788,3467,836];
-// let n = arr.length;
+// let arr = [12,3,51,54,62,5,62,96,34,62,0];
 
-// function InsertionSort(arr,n){
-//     for(let i=1; i<n; i++){
-//         let firstElm = arr[i];
-//         let j=i-1;
-//         while(j>=0 && arr[j]>firstElm){
-//             arr[j+1] = arr[j];
-//             j=j-1;
+// const InsertionSort = (arr)=>{
+//     for (let i = 0; i < arr.length; i++) {
+//             let j=i;
+//         while (j>0 && arr[j-1]>arr[j]) {
+//                 let temp = arr[j];
+//                 arr[j] = arr[j-1];
+//                 arr[j-1] = temp;
+//             j--
 //         }
-//         arr[j+1] = firstElm;
 //     }
 //     return arr;
 // }
 
-// console.log(InsertionSort(arr,n));
+// console.log(InsertionSort(arr));
 
 
 // 8.) remove duplicates from array
@@ -356,6 +353,76 @@
 // }
 
 // console.log(singleNumber());
+
+//17.) Star Pattern
+
+// const starPattern = ()=>{
+//     for(let i=0; i<4; i++){
+//         let row="";
+//         for(let j=0; j<4; j++){
+//             row = row + "*"
+//         }
+//         console.log(row);
+//     }
+    
+// }
+// starPattern();
+
+// const starPattern = ()=>{
+//     let n=10 // rows
+//     for(let i=1; i<n; i++){
+//         let row = "";
+//         for(let j=1; j<=1; j++){
+//             row = row + "*";
+//         }
+//         console.log(row);
+//     }
+// }
+
+// starPattern();
+
+// two Sum using brute force
+
+// let arr = [1,2,4,5,7,8,9,10];
+// let n;
+// const twoSum = (arr,n)=>{
+//     let i=0;
+//     let j=1;
+//     for(let i=0; i<arr.length-1; i++){
+//         for (let j =i+ 1; j <arr.length-1; j++){
+//             if(arr[i]+arr[j]===n){
+//                 return {i,j}
+//             }
+//         }
+//     }
+// }
+
+// console.log(twoSum(arr,15))
+
+// two sum using Two pointers
+
+// const twoSumTwoPointer = (arr,n)=>{
+//     let left = 0;
+//     let right = arr.length-1;
+//     while (left<right) {
+//         let sum = arr[left]+arr[right];
+//         if(sum===n){
+//             return {left,right}
+//         }else if(sum>n){
+//             right--;
+//         }else{
+//             left++;
+//         }
+        
+//     }    
+// }
+
+// console.log(twoSumTwoPointer(arr,15));
+
+
+
+
+
 
 
 
